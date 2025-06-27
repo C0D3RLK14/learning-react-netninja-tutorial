@@ -1,4 +1,3 @@
-// Importing 'useEffect' hook
 import { useState, useEffect } from 'react';
 import BlogList from './BlogList'
 
@@ -15,7 +14,6 @@ const Home = () => {
         console.log("Blog deleted successfully!")
     };
 
-    // Using 'useEffect' hook
     useEffect(() => {
         console.log('useEffect invoked');
     });
