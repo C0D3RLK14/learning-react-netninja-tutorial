@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// import Blog from './BlogList'
 import BlogList from './BlogList'
 
 const Home = () => {
@@ -11,17 +10,6 @@ const Home = () => {
 
     return (  
         <div className="home">
-            {/* { blogs.map((blog) => (
-                <div className="blog-preview" key={blog.id}>
-                    <h2>{ blog.title }</h2>
-                    <p>by { blog.author }</p>
-                </div>
-            ))} // Moved to Blogs.js */ }
-
-            {/* Nesting the BlogList component */}
-            {/* <Blog blogs={blogs}/> //So apparently we don't need match the exported variable name 'BlogList' when importing the same component with  another name like 'Blog' */}
-            
-            {/* Passing values as props "blogs={blogs} title="All Blogs"" */}
             <BlogList blogs={blogs} title="All Blogs"/>
         </div>
     );
