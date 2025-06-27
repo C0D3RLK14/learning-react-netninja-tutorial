@@ -11,9 +11,7 @@ const Home = () => {
     return (  
         <div className="home">
             <BlogList blogs={blogs} title="All Blogs"/>
-            {/* Reusing the BlogList component */}
             <BlogList blogs={blogs.filter((blogs) => blogs.author == 'mario')} title="Mario's Blogs"/>
-            {/* So the above 'blogs.filter()' method filter out the blogs with 'blogs.author' equals 'mario'(case sensitive) */}
         </div>
     );
 }
