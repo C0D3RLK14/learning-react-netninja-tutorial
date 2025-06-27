@@ -1,4 +1,5 @@
-import { useState } from 'react';
+// Importing 'useEffect' hook
+import { useState, useEffect } from 'react';
 import BlogList from './BlogList'
 
 const Home = () => {
@@ -13,6 +14,11 @@ const Home = () => {
         setBlogs(newBlogs);
         console.log("Blog deleted successfully!")
     };
+
+    // Using 'useEffect' hook
+    useEffect(() => {
+        console.log('useEffect invoked');
+    });
 
     return (  
         <div className="home">
