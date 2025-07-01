@@ -3,8 +3,7 @@ import BlogList from './BlogList'
 
 const Home = () => {
     const [blogs, setBlogs] = useState(null);
-    const [isPending, setIsPending] = useState(true);
-    // State for error and display context according to state 
+    const [isPending, setIsPending] = useState(true); 
     const [error, setError] = useState(null);
 
     useEffect(() => {
