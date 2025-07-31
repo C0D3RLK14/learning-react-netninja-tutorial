@@ -39,4 +39,4 @@ const useFetch = (url) => {
 
 };
 
-export default useEffect;
+export default useFetch;
